@@ -15,7 +15,7 @@ endIP=100 #End rangescan with this IP(Host part)
 
 _shutdown () {
 case $1 in
-    1) echo "NO SHUTDOWN: At least one pc is running" ;;
+    1) echo "NO SHUTDOWN: At least one pc is running" ; exit ;;
     2) echo "SHUTDOWN: No specified pc is running" ; shutdown -p now ;;
 esac
 }
